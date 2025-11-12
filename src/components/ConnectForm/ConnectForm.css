@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.big-text {
+    font-size: 48px;
+
+    font-weight: bold;
+}
+
+.underline {
+    background-color: white;
+    width: 100px;
+    height: 6px;
+    border-radius: 9px;
+}
+
+.content-box {
+    margin-top: 50px;
+    display: flex;
+    background-color: white;
+    width: 40%;
+    height: 45%;
+    max-width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+form {
+    margin-top: 55px;
+    display: flex;
+    width: 350px;
+    max-width: 350px;
+    flex-direction: column;
+}
+
+.control {
+    outline: 0;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1.1rem 1.5rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.control-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error-appear {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.send-button {
+    background-color: #FCB330;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+    border: 0px;
+    font-size: 17px;
+    font-weight: 300;
+    font-size: 23px;
+    transition: 0.3s ease-in-out;
+}
+
+.send-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.send-button:disabled {
+    cursor: not-allowed;
+}

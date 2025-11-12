@@ -1,0 +1,13 @@
+.faq {
+    display: flex;
+    margin-top: 150px;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
