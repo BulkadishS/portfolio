@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #FCB330;
+    color: white;
+}
+
 .about-menu {
     background-color: transparent;
     color: white;

@@ -29,6 +29,7 @@ export const contentStyle = {
 }
 
 export const footerStyle = {
+  height: 120,
   textAlign: 'center',
   color: '#fff',
   backgroundColor: 'rgb(56, 57, 61)',
