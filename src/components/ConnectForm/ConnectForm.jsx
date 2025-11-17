@@ -1,8 +1,7 @@
-import React from 'react'
 import { useState } from 'react'
-import './ConnectForm.css'
-import userIcon from '../../assets/user.svg'
-import emailIcon from '../../assets/email.svg'
+import '../../styles/ConnectForm.scss'
+import userIcon from '../../assets/form/user.svg'
+import emailIcon from '../../assets/form/email.svg'
 
 export default function ConnectForm() {
     const [ user, setUser ] = useState('')

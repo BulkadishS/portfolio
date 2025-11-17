@@ -3,6 +3,10 @@
     margin-top: 150px;
     min-height: 80vh;
     justify-content: center;
+    
+    @media (max-width: 768px) {
+        margin-top: 75px;
+    }
 }
 
 .faq-container {

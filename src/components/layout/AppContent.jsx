@@ -1,8 +1,8 @@
-import { contentStyle } from "../../data/layoutStyles";
+import '../../styles/layoutStyles/contentStyle.scss'
 
 export default function AppContent({ children }) {
     return (
-        <div style={contentStyle}>
+        <div className='content-style'>
             {children}
         </div>
     )

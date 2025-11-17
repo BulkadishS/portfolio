@@ -1,4 +1,4 @@
-import './Faq.css'
+import '../../styles/Faq.scss'
 import Accordion from '../Accordion/Accordion'
 
 export default function Faq({ activeKeys, setActiveKeys }) {

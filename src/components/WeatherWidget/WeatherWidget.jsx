@@ -1,6 +1,6 @@
-import './WeatherWidget.css'
-import locationIcon from '../../assets/location.svg'
-import searchIcon from '../../assets/search.svg'
+import '../../styles/WeatherWidget.scss'
+import locationIcon from '../../assets/widget/location.svg'
+import searchIcon from '../../assets/widget/search.svg'
 import { useState } from 'react'
 import { getWeatherByCords, getCityCords } from '../../api/api'
 
@@ -49,27 +49,27 @@ export default function WeatherWidget() {
                 <header className='top-content'>
                     <div className="location">
                         <img src={locationIcon} alt="" style={{ width: '30px', height: '40px' }} />
-                        <p>Stuttgart</p>
+                        <p></p>
                     </div>
                     <div className="temp">
-                        <h1>9°C</h1>
+                        <h1></h1>
                     </div>
                     <div className="description-weather">
-                        <p>bewölkt</p>
+                        <p></p>
                     </div>
                 </header>
                 <footer className='bottom-content'>
                     <div className="feels">
-                        <p className='bold'>6°C</p>
-                        <p>Gefühlt</p>
+                        <p className='bold'></p>
+                        <p></p>
                     </div>
                     <div className="humidity">
-                        <p className='bold'>65%</p>
-                        <p>Luftfeuchtigkeit</p>
+                        <p className='bold'></p>
+                        <p></p>
                     </div>
                     <div className="wind">
-                        <p className='bold'>6 KM/H</p>
-                        <p>Wind</p>
+                        <p className='bold'></p>
+                        <p></p>
                     </div>
                 </footer>
             </div>

@@ -1,6 +1,6 @@
 // импорт хуйни всякой для работы
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './index.scss'
 import App from './App.jsx'
 
 // получаем рут

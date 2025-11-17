@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ant-layout {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: 
+      radial-gradient(circle at bottom right, rgb(255, 205, 111) 0%, rgb(33, 119, 176) 50%, transparent 70%),
+      radial-gradient(circle at top left, rgb(255, 205, 111) 0%, rgb(33, 119, 176) 20%, transparent 100%),
+      radial-gradient(circle at center, rgb(255, 205, 111) 0%, rgb(33, 119, 176) 10%, transparent 70%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+html, body #root {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: #FCB330;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .ant-layout {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .ant-layout > * {
+        width: 100% !important;
+        padding: 0.5rem 0;
+    }
+}

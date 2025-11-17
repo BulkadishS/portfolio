@@ -1,4 +1,4 @@
-import './Accordion.css'
+import '../../styles/Accordion.scss'
 import { Collapse } from "antd"
 import { useEffect } from 'react'
 import { aboutItems } from '../../data/faqData'

@@ -1,5 +1,5 @@
 import axios from "axios"
-const API_KEY = '9855294b4c661db4cdc981cb091b3baf'
+const API_KEY = ''
 
 export const getCityCords = async (city) => {
     if(!city.trim()) return null

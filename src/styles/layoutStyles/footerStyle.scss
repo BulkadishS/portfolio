@@ -1,0 +1,18 @@
+footer {
+    margin-top: 17rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(56, 57, 61);
+    width: 100%;
+    position: relative;
+    left: 0;
+    box-sizing: border-box;
+    padding: 3.5rem;
+
+    @media (max-width: 768px) {
+        margin-top: 5rem;
+        background-color: transparent;
+        padding: 3.5rem;
+        height: auto;
+    }
+}

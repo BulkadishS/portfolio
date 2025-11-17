@@ -1,9 +1,12 @@
-import { footerStyle } from "../../data/layoutStyles";
-
+import '../../styles/layoutStyles/footerStyle.scss'
+import '../../styles/AppFooter.scss'
+import gitIcon from '../../assets/footerAssets/github.svg'
+import linkedInIcon from '../../assets/footerAssets/linkedin.svg'
 
 export default function AppFooter() {
+  const year = new Date().getFullYear()
     return (
-    <footer style={footerStyle}>
+    <footer>
       <section className="footer-container">
         <ul className="contacts">
           <div className="contact-block">
@@ -20,12 +23,15 @@ export default function AppFooter() {
             <p>Schütze deine Daten, entdecke die Welt – anonym und sorgenfrei</p>
           </div>
           <div className="social-media">
-            <a href="">
-              <img src="" alt="#" />
+            <a href="https://github.com/BulkadishS" target="_blank">
+              <img src={gitIcon} alt="#" style={{ width: '40px', height: '40px' }} />
             </a>
-            <a href="">
-              <img src="" alt="#" />
+            <a href="https://www.linkedin.com/in/denys-lysenko-654118388/" target="_blank">
+              <img src={linkedInIcon} alt="#" style={{ width: '40px', height: '40px' }} />
             </a>
+          </div>
+          <div className="copyright">
+            <p>©{year} CheesyVPN</p>
           </div>
         </div>
       </section>

@@ -1,0 +1,28 @@
+.connect-button {
+    background-color: rgba(252, 179, 48);
+    justify-content: space-evenly;
+    width: 250px;
+    height: 250px;
+    
+    font: {
+        size: 23px;
+        weight: 300;
+    }
+
+
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.ant-btn-primary:hover {
+    background-color: #FCB330 !important;
+    opacity: 0.7;
+}
+
+.connect-button.ant-btn-primary:active {
+    background-color: #FCB330 !important;
+    opacity: 0.7;
+}

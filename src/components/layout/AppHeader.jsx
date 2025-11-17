@@ -1,18 +1,27 @@
 import ConnectButton from '../ConnectButton/ConnectButton.jsx'
-import './AppHeader.css'
-import logo from '../../assets/logo.png'
-import { headerStyle } from '../../data/layoutStyles.js'
+import '../../styles/AppHeader.scss'
+import logo from '../../assets/navBar/logo.png'
+// import { headerStyle } from '../../data/layoutStyles.js'
+import '../../styles/layoutStyles/headerStyle.scss'
 import { navItems } from '../../data/navBarItems.js'
+import { useEffect, useState } from 'react'
 
 
 export default function AppHeader({ setActiveKeys, displayNav = true, displayButton = true }) {
+  const [ isMobile, setIsMobile ] = useState(window.innerWidth <= 859)
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 859)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   const handleNavClick = (e, key) => {
     e.preventDefault()
     setActiveKeys([key])
   }
 
     return (
-    <header style={headerStyle}>
+    <header>
         <a href="/"><img src={logo} alt="" /></a>
         {displayNav && (
           <div className='nav-style'>
@@ -25,7 +34,7 @@ export default function AppHeader({ setActiveKeys, displayNav = true, displayBut
             )}
           </div>
         )}
-        <ConnectButton displayButton={displayButton} />
+        {!isMobile && <ConnectButton classname={'header-button'} displayButton={displayButton} />}
     </header>
     )
 }

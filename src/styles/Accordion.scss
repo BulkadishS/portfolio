@@ -1,0 +1,51 @@
+.accordion-content {
+    width: 60%;
+    max-width: 60%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
+
+.accordion {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    .ant-collapse-item {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    .ant-collapse-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        color: white;
+        font-size: 20px;
+        padding: 1.5rem;
+    }
+
+    .ant-collapse-header-text {
+        font: {
+            size: 25px;
+            weight: 300;
+        }
+        color: white;
+
+        padding: 10px;        
+    }
+
+    .ant-collapse-expand-icon {
+        color: white;
+    }
+
+    .ant-collapse-item-active {
+        .ant-collapse-header {
+            transition: 0.3s ease-in-out;
+            border-bottom: 1px solid white;
+        }
+    }
+}

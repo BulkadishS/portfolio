@@ -1,6 +1,6 @@
-import './Hero.css'
+import '../../styles/Hero.scss'
 import ConnectButton from '../ConnectButton/ConnectButton'
-import heroIcon from '../../assets/logo.png'
+import heroIcon from '../../assets/navBar/logo.png'
 
 export default function Hero() {
     return (
@@ -10,7 +10,7 @@ export default function Hero() {
                     <p>Verbinden Sie sich ohne Probleme</p>
                     <h2>Cheesy VPN</h2>
                     <p className='indent'>Sichere Verbindung, sicheres Surfen im Internet</p>
-                    <ConnectButton width='350px' height='70px' />
+                    <ConnectButton classname={'hero-button'} />
                 </div>
             </section>
             <section className='icon'>
