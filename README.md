@@ -2,7 +2,7 @@
 
 [Live Site](https://candid-genie-7eed4f.netlify.app/)
 
-This is a landing page for a Telegram bot startup.  
+This is a demo-landing page for a Telegram bot startup.  
 The project is fully responsive and works well on both desktop and mobile devices.
 
 ---
